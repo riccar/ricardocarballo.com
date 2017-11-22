@@ -1,0 +1,23 @@
+{
+  "name": "ricardocarballo.com",
+  "version": "1.0.0",
+  "description": "Ric's Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riccar/ricardocarballo.com.git"
+  },
+  "author": "Ricardo Carballo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riccar/ricardocarballo.com/issues"
+  },
+  "homepage": "https://github.com/riccar/ricardocarballo.com#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-watch": "^4.3.11"
+  }
+}

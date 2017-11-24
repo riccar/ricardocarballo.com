@@ -1,0 +1,6 @@
+$mainColour: #a05326;
+body {
+  font-family: roboto, sans-serif;
+  color: $mainColour;
+  columns: 300px;
+}

@@ -1,0 +1,33 @@
+.main-nav {
+  text-align: center;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    
+    list-style: none;
+    /*Align items horizontally*/
+    display: inline-block;
+    /*creates a padding between each item*/
+    padding: 5px 5px 8px 0;
+  }
+  
+  a {
+    
+    /*color: #FFF;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    padding: 5px 7px;
+    font-size: .7rem;
+    border-radius: 3px;
+    background-color: $headerBtn;
+   */
+    width: 60px;
+     /*box-shadow: 2px 2px 3px rgba(0, 0, 0, .40);*/
+  }
+
+}

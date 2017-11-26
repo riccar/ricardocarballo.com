@@ -28,4 +28,32 @@
     padding-left: 5px;
     font-size: .7rem;
   }
+
+  &__line-decorator {
+    height: 3px;
+    width: 200px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, $mainColour, $headerBgColour);
+    animation-name: line-decorator;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transform-origin: left;
+  }
+}
+
+/*Start Animation */
+@keyFrames line-decorator {
+  /*Style when the animation is 0% completed*/
+  0% {
+    transform: scaleX(0);
+  }
+  70% {
+ 
+  }
+  /*Style when the application is at 100% completion*/
+  100% {
+   transform: scaleX(1);
+  }
 }

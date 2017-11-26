@@ -4,3 +4,7 @@ body {
   background-color: $bgColour;
   
 }
+
+* {
+  box-sizing: border-box;
+}

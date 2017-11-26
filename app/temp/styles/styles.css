@@ -450,11 +450,20 @@ template {
   display: none;
 }
 
+/*Main colours*/
+
+/*Section colours*/
+
 body {
   font-family: Courier New, sans-serif;
-  color: #0d3c72;
-  background-color: #ccc;
+  color: #b24e10;
+  background-color: #FFF;
   
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .site-header {
@@ -464,7 +473,7 @@ body {
   padding-left: 3px;*/
   width: 100%;
   color: white;
-  background-color: #2764a5;
+  background-color: #f9680e;
   -webkit-box-shadow: 0px 10px 6px -6px #777;
           box-shadow: 0px 10px 6px -6px #777;
 }
@@ -490,8 +499,45 @@ body {
     font-size: .7rem;
   }
 
+.site-header__line-decorator {
+    height: 3px;
+    width: 200px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    border-radius: 20px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#b24e10), to(#f9680e));
+    background-image: linear-gradient(to right, #b24e10, #f9680e);
+    -webkit-animation-name: line-decorator;
+            animation-name: line-decorator;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+
+/*Start Animation */
+
+@keyFrames line-decorator {
+  /*Style when the animation is 0% completed*/
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  70% {
+ 
+  }
+  /*Style when the application is at 100% completion*/
+  100% {
+   -webkit-transform: scaleX(1);
+           transform: scaleX(1);
+  }
+}
+
 .main-nav {
   text-align: center;
+
 
 }
 
@@ -506,39 +552,154 @@ body {
     /*Align items horizontally*/
     display: inline-block;
     /*creates a padding between each item*/
-    padding: 5px 5px 8px 0;
+    padding: 5px 5px 5px 0;
   }
 
 .main-nav a {
-    
-    /*color: #FFF;
+    opacity: 0;
+    color: #FFF;
     text-decoration: none;
-    font-weight: 300;
-    display: block;
-    padding: 5px 7px;
-    font-size: .7rem;
-    border-radius: 3px;
-    background-color: $headerBtn;
-   */
-    width: 60px;
+    font-size: .8rem;   
+    -webkit-animation-name: menuItems;   
+            animation-name: menuItems;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
      /*box-shadow: 2px 2px 3px rgba(0, 0, 0, .40);*/
   }
+
+.main-nav .underline {
+    background-color: #b24e10;
+    height: 5px;
+    opacity: 0;
+    -webkit-animation-name: underline;
+            animation-name: underline;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    border-radius: 20px;
+  }
+
+.main-nav :nth-child(2) .underline {
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+
+.main-nav :nth-child(3) .underline {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+
+.main-nav :nth-child(4) .underline {
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+  }
+
+/*Target the second and subsequent elements to delay its animation*/
+
+.main-nav :nth-child(2) a {
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+
+.main-nav :nth-child(3) a {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+
+.main-nav :nth-child(4) a {
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+  }
+
+/* /main-nav */
+
+/*Start Animation */
+
+@keyFrames underline {
+  /*Style when the animation is 0% completed*/
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  70% {
+
+    -webkit-transform: translateY(-4px);
+
+            transform: translateY(-4px);
+    /*background-color: $mainNavSelected;*/
+  }
+  80% {
+
+    -webkit-transform: translateY(0px);
+
+            transform: translateY(0px)
+  }
+  90% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px)
+  }
+  /*Style when the application is at 100% completion*/
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+/*Start Animation */
+
+@keyFrames menuItems {
+  /*Style when the animation is 0% completed*/
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.4;
+  }
+  /*Style when the application is at 100% completion*/
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+/* End Animation */
 
 .section {
  
   padding: 20px;
   margin: 10px;
   border-radius: 3px;
-  background-color: rgba(255,255,255, .5);
   -webkit-box-shadow: 0px 10px 6px -6px #777;
           box-shadow: 0px 10px 6px -6px #777;
 }
 
-.about {
-  /*position: relative;*/
-  border: solid 1px;
+.section__about {
+    background-color: rgba(178,78,16, .3);
+  }
 
-}
+.section__skills {
+    background-color: rgba(214,193,34, .3);
+  }
+
+.section__strenghts {
+    background-color: rgba(144,219,63, .3);
+  }
+
+.section__projects {
+    background-color: rgba(216,34,34, .3);
+  }
 
 .btn {
   background-color: #26a576;
@@ -553,4 +714,6 @@ body {
   so its parent and surrounding elements are aware of
   its vertical padding*/
   display: inline-block;
+
+ 
 }

@@ -1,5 +1,16 @@
-$mainColour: #0d3c72;
-$bgColour: #ccc;
+/*Main colours*/
+$mainColour: #b24e10;
+$mainColourGradient: #f9680e;
+$bgColour: #FFF;
 $shadowColour: #777;
-$headerBgColour: #2764a5;
+$headerBgColour: #f9680e;
 $headerBtn: #26a576;
+$mainNavSelected: #7e3baf;
+
+/*Section colours*/
+$aboutBgColour: #b24e10;
+$skillsBgColour: #d6c122;
+$strengthsBgColour: #90db3f;
+$projectsBgColour: #d82222;
+
+

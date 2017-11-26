@@ -1,16 +1,20 @@
 /*Main colours*/
-$mainColour: #b24e10;
+
+$mainColour: #f9680e;
+
 $mainColourGradient: #f9680e;
-$bgColour: #FFF;
-$shadowColour: #777;
-$headerBgColour: #f9680e;
+$bgColour: #7f4e26;
+$shadowColour: #3a2311;
+
+$headerBgColour: #a54306;
 $headerBtn: #26a576;
-$mainNavSelected: #7e3baf;
+$mainNavUnSelected: #af683b;
+
 
 /*Section colours*/
-$aboutBgColour: #b24e10;
-$skillsBgColour: #d6c122;
-$strengthsBgColour: #90db3f;
-$projectsBgColour: #d82222;
+$aboutBgColour: #FFF;
+$skillsBgColour: #FFF;
+$strengthsBgColour: #FFF;
+$projectsBgColour: #FFF;
 
 

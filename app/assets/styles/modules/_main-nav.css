@@ -13,7 +13,7 @@
     /*Align items horizontally*/
     display: inline-block;
     /*creates a padding between each item*/
-    padding: 5px 5px 5px 0;
+    padding: 5px 10px 5px 0;
   }
   
   a {
@@ -96,6 +96,7 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+    background-color: $mainNavUnSelected;
   }
 }
 

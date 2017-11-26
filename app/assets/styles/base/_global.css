@@ -1,6 +1,6 @@
 body {
-  font-family: Courier New, sans-serif;
-  color: $mainColour;
+  font-family: 'Cabin', sans-serif;
+  color: $headerBgColour;
   background-color: $bgColour;
   
 }

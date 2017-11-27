@@ -718,3 +718,17 @@ body {
 
  
 }
+
+.reveal-item {
+  opacity: 0;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.reveal-item--is-visible {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }

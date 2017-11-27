@@ -7,6 +7,8 @@
   color: white;
   background-color: $headerBgColour;
   box-shadow: 0px 10px 6px -6px $shadowColour;
+  position: fixed;
+  z-index: 5;
 
   &__title {
     /*Remove text bold*/

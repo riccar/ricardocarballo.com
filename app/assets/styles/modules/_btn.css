@@ -1,5 +1,5 @@
 .btn {
-  background-color: $headerBtn;
+  background-color: $bgColour;
   color: #FFF;
   /*Remove underline*/
   text-decoration: none;

@@ -489,7 +489,6 @@ body {
   }
 
 .site-header__title {
-    /*Remove text bold*/
     font-weight: 400;
     color: #FFF;
     /*Set margin to 0 to close together the title and subtitle*/
@@ -726,7 +725,7 @@ body {
   }
 
 .btn {
-  background-color: #26a576;
+  background-color: #7f4e26;
   color: #FFF;
   /*Remove underline*/
   text-decoration: none;

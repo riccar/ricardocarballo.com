@@ -1,0 +1,35 @@
+/*Mixins for screen sizes larger than a mobile phone*/
+
+/*atSmall for screen size of 530px*/
+@define-mixin atSmall {
+  @media (min-width: 530px) {
+    @mixin-content;
+  }
+}
+
+/*atSmall for screen size of 800px*/
+@define-mixin atMedium {
+  @media (min-width: 800px) {
+    @mixin-content;
+  }
+}
+
+/*atSmall for screen size of 1024px*/
+@define-mixin atLarge {
+  @media (min-width: 1024px) {
+    @mixin-content;
+  }
+}
+
+/*clearfix to clear elements in container when they are
+set to be float so the container knows what's its current height*/
+@define-mixin clearfix {
+  /*The following selector creates an empty space in the html with CSS
+  after all of the content of its container then the space is cleared both*/
+  &::after {
+    content: "";
+    clear: both;
+    /*for browser support*/
+    display: table;
+  }
+}

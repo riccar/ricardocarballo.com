@@ -466,6 +466,17 @@ body {
           box-sizing: border-box;
 }
 
+/*Mixins for screen sizes larger than a mobile phone*/
+
+/*atSmall for screen size of 530px*/
+
+/*atSmall for screen size of 800px*/
+
+/*atSmall for screen size of 1024px*/
+
+/*clearfix to clear elements in container when they are
+set to be float so the container knows what's its current height*/
+
 .site-header {
   margin: 0;
   padding: 0;
@@ -701,7 +712,19 @@ body {
           box-shadow: 0px 10px 6px -6px #7f4e26;
   height: 550px;
   border: 1px dotted;
+  letter-spacing: 0.07rem;
+
+  background-color: rgba(178,177,174, .2);
 }
+
+@media (min-width: 800px) {
+
+.section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px
+}
+  }
 
 .section__title {
     
@@ -794,13 +817,13 @@ body {
 .anchor {
   display: block;
   position: relative;
-  top: -50px;
+  top: -55px;
   visibility: hidden;
 }
 
 .anchor--about {
     display: block;
     position: relative;
-    top: -90px;
+    top: -105px;
     visibility: hidden;
   }

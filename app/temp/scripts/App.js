@@ -11230,12 +11230,12 @@ var StickyHeader = function () {
         //this.lazyImages = $(".lazyload");
         //Select the site header object
         this.siteHeader = (0, _jquery2.default)(".site-header");
-        //Select the trigger element to change background colour
+        //Select the trigger element to change header height
         this.headerTriggerElement = (0, _jquery2.default)(".section--about");
         //Call main function on object creation
         this.createHeaderWaypoint();
         //Select all the page section elements
-        this.pageSection = (0, _jquery2.default)(".section");
+        this.pageSection = (0, _jquery2.default)(".anchor");
         this.headerLinksUnderline = (0, _jquery2.default)(".main-nav div");
         this.headerLinks = (0, _jquery2.default)(".main-nav a");
         //Create waypoints to highlight page sections links when scrolling
@@ -11306,8 +11306,8 @@ var StickyHeader = function () {
                             (0, _jquery2.default)(matchingHeaderLink).addClass("underline--is-current-link");
                         }
                     },
-                    //Make the highlight to happen 18% before the section reaches the top of the viewport
-                    offset: "18%"
+                    //Make the highlight to happen x% before the section reaches the top of the viewport
+                    offset: "25%"
                 });
 
                 //Waypoint for scrolling direction = up with different offset
@@ -11326,7 +11326,7 @@ var StickyHeader = function () {
                         }
                     },
                     //Make the highlight to happen -x% before the section reaches the top of the viewport
-                    offset: "-40%"
+                    offset: "-60%"
                 });
             });
         }

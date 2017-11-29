@@ -10,12 +10,12 @@ class StickyHeader {
         //this.lazyImages = $(".lazyload");
         //Select the site header object
         this.siteHeader = $(".site-header");
-        //Select the trigger element to change background colour
+        //Select the trigger element to change header height
         this.headerTriggerElement = $(".section--about");
         //Call main function on object creation
         this.createHeaderWaypoint();
         //Select all the page section elements
-        this.pageSection = $(".section");
+        this.pageSection = $(".anchor");
         this.headerLinksUnderline = $(".main-nav div");
         this.headerLinks = $(".main-nav a");
         //Create waypoints to highlight page sections links when scrolling
@@ -79,8 +79,8 @@ class StickyHeader {
                     }
                     
                 },
-                //Make the highlight to happen 18% before the section reaches the top of the viewport
-                offset: "18%"
+                //Make the highlight to happen x% before the section reaches the top of the viewport
+                offset: "25%"
             });
 
             //Waypoint for scrolling direction = up with different offset
@@ -100,7 +100,7 @@ class StickyHeader {
                     
                 },
                 //Make the highlight to happen -x% before the section reaches the top of the viewport
-                offset: "-40%"
+                offset: "-60%"
             });
         });
     }

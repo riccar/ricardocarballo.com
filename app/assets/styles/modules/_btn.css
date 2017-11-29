@@ -4,7 +4,7 @@
   /*Remove underline*/
   text-decoration: none;
   /*add space around the borders top/bottom = .75*/
-  padding: 5px 7px;
+  padding: 10px 10px;
   font-size: .7rem;
   border-radius: 3px;
   /*Set element as inline-block level

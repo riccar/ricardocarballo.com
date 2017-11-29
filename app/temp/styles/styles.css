@@ -474,8 +474,8 @@ body {
   width: 100%;
   color: white;
   background-image: url("../../assets/images/darkdenim3.png");
-  -webkit-box-shadow: 0px 10px 6px -6px #3a2311;
-          box-shadow: 0px 10px 6px -6px #3a2311;
+  -webkit-box-shadow: 0px 10px 6px -6px #7f4e26;
+          box-shadow: 0px 10px 6px -6px #7f4e26;
   position: fixed;
   z-index: 5;
   top: 0;
@@ -575,7 +575,7 @@ body {
             animation-duration: 2s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-     /*box-shadow: 2px 2px 3px rgba(0, 0, 0, .40);*/
+    
 
   }
 
@@ -694,21 +694,57 @@ body {
 
 .section {
  
-  padding: 20px;
-  margin: 10px;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 10px 6px -6px #3a2311;
-          box-shadow: 0px 10px 6px -6px #3a2311;
+  padding: 60px 20px;
+  margin: 40px 15px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 10px 6px -6px #7f4e26;
+          box-shadow: 0px 10px 6px -6px #7f4e26;
   height: 550px;
-  border: 1px solid;
+  border: 1px dotted;
 }
 
 .section__title {
-    /*background-color:#FFF;*/
+    
+    font-weight: 400;
+	  font-size: 1.4rem;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 4px rgba(127,78,38, 0.3), 0 0 40px rgba(127,78,38, 0.1) inset;
+            box-shadow: 0 1px 4px rgba(127,78,38, 0.3), 0 0 40px rgba(127,78,38, 0.1) inset; 
+    background:#FFF;
+    
+    height: 60px;
+    top: -10px;
+    left: 10px;
+    padding: 5px 20px;
+    position: absolute;
   }
 
+/*Start title shadow effect*/
+
+.section__title:before, .section__title:after {
+	  content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow: 0 0 20px rgba(127,78,38, .8);
+            box-shadow: 0 0 20px rgba(127,78,38, .8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    border-radius:100px / 10px;
+  }
+
+.section__title:after {
+    right:10px; 
+    left:auto; 
+    -webkit-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
+  }
+
+/*End title shadow effect*/
+
 .section--about {
-    margin-top: 85px;
+    margin-top: 105px;
     /*background-color: rgba($aboutBgColour, .4);*/
   }
 
@@ -730,7 +766,7 @@ body {
   /*Remove underline*/
   text-decoration: none;
   /*add space around the borders top/bottom = .75*/
-  padding: 5px 7px;
+  padding: 10px 10px;
   font-size: .7rem;
   border-radius: 3px;
   /*Set element as inline-block level
@@ -753,4 +789,18 @@ body {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
+
+.anchor--about {
+    display: block;
+    position: relative;
+    top: -90px;
+    visibility: hidden;
   }

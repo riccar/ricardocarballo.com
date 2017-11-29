@@ -456,9 +456,9 @@ template {
 
 body {
   font-family: 'Cabin', sans-serif;
-  color: #a54306;
-  background-color: #7f4e26;
-  
+  color: #332d27;
+  background-attachment: fixed;
+  background-image: url("../../assets/images/topography.png");
 }
 
 * {
@@ -473,7 +473,7 @@ body {
   padding-left: 3px;*/
   width: 100%;
   color: white;
-  background-color: #a54306;
+  background-image: url("../../assets/images/darkdenim3.png");
   -webkit-box-shadow: 0px 10px 6px -6px #3a2311;
           box-shadow: 0px 10px 6px -6px #3a2311;
   position: fixed;
@@ -515,8 +515,8 @@ body {
     margin-left: 5px;
     margin-bottom: 2px;
     border-radius: 20px;
-    background-image: -webkit-gradient(linear, left top, right top, from(#f9680e), to(#a54306));
-    background-image: linear-gradient(to right, #f9680e, #a54306);
+    background-image: -webkit-gradient(linear, left top, right top, from(#f9680e), to(#332d27));
+    background-image: linear-gradient(to right, #f9680e, #332d27);
     -webkit-animation-name: line-decorator;
             animation-name: line-decorator;
     -webkit-animation-duration: 2s;
@@ -581,7 +581,7 @@ body {
   }
 
 .main-nav .underline {
-    background-color: #af683b;
+    background-color: #635342;
     height: 5px;
     opacity: 0;
     -webkit-animation-name: underline;
@@ -669,7 +669,7 @@ body {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
-   // background-color: #af683b;
+   // background-color: #635342;
   }
 }
 
@@ -701,23 +701,28 @@ body {
   -webkit-box-shadow: 0px 10px 6px -6px #3a2311;
           box-shadow: 0px 10px 6px -6px #3a2311;
   height: 550px;
+  border: 1px solid;
 }
 
-.section__about {
+.section__title {
+    /*background-color:#FFF;*/
+  }
+
+.section--about {
     margin-top: 85px;
-    background-color: rgba(255,255,255, .6);
+    /*background-color: rgba($aboutBgColour, .4);*/
   }
 
-.section__skills {
-    background-color: rgba(255,255,255, .6);
+.section--skills {
+    /*background-color: rgba($skillsBgColour, .6);*/
   }
 
-.section__strenghts {
-    background-color: rgba(255,255,255, .6);
+.section--strenghts {
+    /*background-color: rgba($strengthsBgColour, .6);*/
   }
 
-.section__projects {
-    background-color: rgba(255,255,255, .6);
+.section--projects {
+    /*background-color: rgba($projectsBgColour, .6);*/
   }
 
 .btn {

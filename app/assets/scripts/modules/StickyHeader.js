@@ -11,7 +11,7 @@ class StickyHeader {
         //Select the site header object
         this.siteHeader = $(".site-header");
         //Select the trigger element to change background colour
-        this.headerTriggerElement = $(".section__about");
+        this.headerTriggerElement = $(".section--about");
         //Call main function on object creation
         this.createHeaderWaypoint();
         //Select all the page section elements

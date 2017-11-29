@@ -1,8 +1,8 @@
 body {
   font-family: 'Cabin', sans-serif;
   color: $headerBgColour;
-  background-color: $bgColour;
-  
+  background-attachment: fixed;
+  background-image: url("../../assets/images/topography.png");
 }
 
 * {

@@ -23,28 +23,28 @@
       <ul>
         <li>
           <a href="#about">About</a>
-          <div class="underline"></div>
+          <div id="about-link" class="underline"></div>
         </li>
         <li  >
           <a href="#skills">Skills</a>
-          <div class="underline"></div>
+          <div id="skills-link" class="underline"></div>
         </li>
         <li>
-          <a href="#strengths">Strengths</a>
-          <div class="underline"></div>
+          <a href="#strenghts">Strengths</a>
+          <div id="strengths-link" class="underline"></div>
         </li>
         <li>
           <a href="#projects">Projects</a>
-          <div class="underline"></div>
+          <div id="projects-link" class="underline"></div>
         </li>
      
       </ul>
     </nav><!-- /top-nav -->
   </header>
 
-  <div id="about" class="section section__about">
+  <div id="about" class="section section__about" data-matching-link="#about-link">
     <h3>About me</h3>
-    <p>Hi there...</p>
+    <p class"shrink-menu-point">Hi there...</p>
     <p>I'm a web developer with experience on consultancy.
       I focus my work on Front-End and UX but I'm also 
       confortable developing backend components. I have 
@@ -58,7 +58,7 @@
     <div class="btn">Get in touch</div>
   </div>
 
-  <div class="section section__skills">
+  <div id="skills" class="section section__skills" data-matching-link="#skills-link">
     <h3>Technical Skills</h3>
     <ul>
       <li>HTML, CSS, JavaScript</li>
@@ -71,7 +71,7 @@
     </ul>
   </div>
 
-  <div class="section section__strenghts">
+  <div id="strenghts" class="section section__strenghts" data-matching-link="#strengths-link">
     <h3>Core Strength</h3>
     <ul>
       <li>Collaborative by nature</li>
@@ -81,7 +81,7 @@
     </ul>
   </div>
 
-  <div class="section section__projects">
+  <div id="projects" class="section section__projects" data-matching-link="#projects-link">
     <h3>Projects</h3>
     <p><a target="_blank" href="https://riccar.github.io/demo-site">Travel Agency Demo Site</a> 
       This website objective is to showcase best practices on development and build automation, code organization and styling best practices</p>

@@ -710,11 +710,13 @@ set to be float so the container knows what's its current height*/
   border-radius: 5px;
   -webkit-box-shadow: 0px 10px 6px -6px #7f4e26;
           box-shadow: 0px 10px 6px -6px #7f4e26;
-  height: 550px;
+  height: auto;
   border: 1px dotted;
   letter-spacing: 0.07rem;
 
   background-color: rgba(178,177,174, .2);
+
+  
 }
 
 @media (min-width: 800px) {
@@ -723,6 +725,8 @@ set to be float so the container knows what's its current height*/
     margin-left: auto;
     margin-right: auto;
     max-width: 750px
+
+  
 }
   }
 
@@ -781,6 +785,21 @@ set to be float so the container knows what's its current height*/
 
 .section--projects {
     /*background-color: rgba($projectsBgColour, .6);*/
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transform: translate3d(0, 0, 20px);
+            transform: translate3d(0, 0, 20px);
+
   }
 
 .btn {

@@ -4,7 +4,7 @@
   margin: 40px 15px;
   border-radius: 5px;
   box-shadow: 0px 10px 6px -6px $shadowColour;
-  height: 550px;
+  height: auto;
   border: 1px dotted;
   letter-spacing: 0.07rem;
 
@@ -71,5 +71,17 @@
   &--projects {
     /*background-color: rgba($projectsBgColour, .6);*/
   }
+
+  
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translate3d(0, 0, 20px);
+
+  }

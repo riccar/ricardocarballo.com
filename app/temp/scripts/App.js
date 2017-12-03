@@ -11326,7 +11326,7 @@ var StickyHeader = function () {
                         }
                     },
                     //Make the highlight to happen -x% before the section reaches the top of the viewport
-                    offset: "-60%"
+                    offset: "-40%"
                 });
             });
         }

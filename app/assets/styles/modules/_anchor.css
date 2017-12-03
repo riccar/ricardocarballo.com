@@ -1,14 +1,23 @@
+/*Style the anchor div to move it slighty up so the main-nav link indicators can be
+highlited properly when scrolling up and down.*/
 .anchor {
   display: block;
   position: relative;
   top: -55px;
   visibility: hidden;
 
+  @mixin atLarge {
+    top: -105px;      
+  }
+
+  /*Move the about link further up to compensate for the gap left when the header is wider for small screens*/
   &--about {
     display: block;
     position: relative;
     top: -105px;
     visibility: hidden;
+
+    
   }
 }
 

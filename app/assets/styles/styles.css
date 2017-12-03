@@ -7,4 +7,6 @@
 @import "modules/_section";
 @import "modules/_btn";
 @import "modules/_reveal-item";
-@import "modules/_anchors";
+@import "modules/_anchor";
+@import "modules/_project";
+@import "modules/_footer";

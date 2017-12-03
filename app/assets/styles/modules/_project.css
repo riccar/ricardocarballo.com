@@ -1,0 +1,46 @@
+.project {
+
+  position: relative;
+
+  @mixin atMedium {
+    padding-left: 230px;
+  }
+
+ 
+
+  &__image-site {
+    position: relative;
+    width: 15em;
+    display: block;
+    margin: 25px auto -65px auto;
+    transform: perspective( 650px ) rotateY(45deg);
+    box-shadow:0 0 20px rgba($shadowColour, .8);
+
+    @mixin atMedium {
+      position: absolute;
+      left: 0;
+      margin: 5px auto 5px auto;
+    }
+  }
+
+  &__image-mobile {
+    position: relative;
+    width: 5em;
+    display: block;
+    margin: 25px auto -65px auto;
+    top: -100px;
+    left: 40px;
+    transform: perspective( 650px ) rotateY(45deg);
+    box-shadow:0 0 20px rgba($shadowColour, .8);
+
+    @mixin atMedium {
+      position: absolute;
+      margin: 0;
+      left: 118px;
+      top: 28px;
+
+    }
+  }
+
+}
+

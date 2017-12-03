@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Cabin', sans-serif;
   color: $headerBgColour;
@@ -5,6 +9,7 @@ body {
   background-image: url("../../assets/images/topography.png");
 }
 
-* {
-  box-sizing: border-box;
+
+a {
+	color: $mainColour;
 }

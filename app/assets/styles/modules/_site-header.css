@@ -11,11 +11,20 @@
   z-index: 5;
   top: 0;
   transition: all .5s;
+
+  @mixin atLarge {
+     padding-bottom: 0.4rem;
+  }
   
 
   &--small {
     top: -45px;
-    /*transform: scale(.8);*/
+
+    /*Keep main-nav fully visible for large screens*/
+    @mixin atLarge {
+      top: 0;
+    }
+
   }
 
   &__title {

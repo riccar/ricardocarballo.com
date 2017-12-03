@@ -1,6 +1,6 @@
 .main-nav {
   text-align: center;
-
+  transition: all .5s;
 
   ul {
     margin: 0;
@@ -24,7 +24,11 @@
     animation-name: menuItems;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    
+    transition: all .5s;
+
+    @mixin atLarge {
+       font-size: 1.2rem; 
+    }
 
   }
   
@@ -44,7 +48,6 @@
   
   }
 
-   
 
   & :nth-child(2) .underline {
     animation-delay: .5s;

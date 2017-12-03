@@ -454,6 +454,11 @@ template {
 
 /*Section colours*/
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Cabin', sans-serif;
   color: #332d27;
@@ -461,9 +466,8 @@ body {
   background-image: url("../../assets/images/topography.png");
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+a {
+	color: #f9680e;
 }
 
 /*Mixins for screen sizes larger than a mobile phone*/
@@ -494,9 +498,26 @@ set to be float so the container knows what's its current height*/
   transition: all .5s;
 }
 
+@media (min-width: 1024px) {
+
+.site-header {
+     padding-bottom: 0.4rem
+}
+  }
+
 .site-header--small {
     top: -45px;
-    /*transform: scale(.8);*/
+
+  }
+
+/*Keep main-nav fully visible for large screens*/
+
+@media (min-width: 1024px) {
+
+.site-header--small {
+      top: 0
+
+  }
   }
 
 .site-header__title {
@@ -557,6 +578,8 @@ set to be float so the container knows what's its current height*/
 
 .main-nav {
   text-align: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 
 
 }
@@ -586,8 +609,17 @@ set to be float so the container knows what's its current height*/
             animation-duration: 2s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    
+    -webkit-transition: all .5s;
+    transition: all .5s;
 
+  }
+
+@media (min-width: 1024px) {
+
+.main-nav a {
+       font-size: 1.2rem
+
+  }
   }
 
 .main-nav .underline {
@@ -787,21 +819,6 @@ set to be float so the container knows what's its current height*/
     /*background-color: rgba($projectsBgColour, .6);*/
   }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    position: relative;
-    z-index: 1;
-    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -webkit-transform: translate3d(0, 0, 20px);
-            transform: translate3d(0, 0, 20px);
-
-  }
-
 .btn {
   background-color: #7f4e26;
   color: #FFF;
@@ -845,4 +862,90 @@ img {
     position: relative;
     top: -105px;
     visibility: hidden;
+  }
+
+.project {
+
+  position: relative;
+
+}
+
+@media (min-width: 800px) {
+
+.project {
+    padding-left: 230px
+
+}
+  }
+
+.project__image-site {
+    position: relative;
+    width: 15em;
+    display: block;
+    margin: 25px auto -65px auto;
+    -webkit-transform: perspective( 650px ) rotateY(45deg);
+            transform: perspective( 650px ) rotateY(45deg);
+    -webkit-box-shadow: 0 0 20px rgba(127,78,38, .8);
+            box-shadow: 0 0 20px rgba(127,78,38, .8);
+  }
+
+@media (min-width: 800px) {
+
+.project__image-site {
+      position: absolute;
+      left: 0;
+      margin: 5px auto 5px auto
+  }
+  }
+
+.project__image-mobile {
+    position: relative;
+    width: 5em;
+    display: block;
+    margin: 25px auto -65px auto;
+    top: -100px;
+    left: 40px;
+    -webkit-transform: perspective( 650px ) rotateY(45deg);
+            transform: perspective( 650px ) rotateY(45deg);
+    -webkit-box-shadow: 0 0 20px rgba(127,78,38, .8);
+            box-shadow: 0 0 20px rgba(127,78,38, .8);
+  }
+
+@media (min-width: 800px) {
+
+.project__image-mobile {
+      position: absolute;
+      margin: 0;
+      left: 118px;
+      top: 28px
+  }
+  }
+
+.site-footer{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding: .4rem 0;
+  text-align: center;
+  color: white;
+  background-image: url("../../assets/images/darkdenim3.png");
+
+}
+
+/*Braking button in next line for medium size screens*/
+
+.site-footer__text {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 300;
+  }
+
+@media (min-width: 800px) {
+
+.site-footer__text {
+      /*Display text and button on the same line*/
+      display: inline;
+      margin-bottom: 0;
+      margin-right: 1.4rem
+  }
   }

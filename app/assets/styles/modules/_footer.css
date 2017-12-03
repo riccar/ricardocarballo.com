@@ -1,0 +1,25 @@
+.site-footer{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding: .4rem 0;
+  text-align: center;
+  color: white;
+  background-image: url("../../assets/images/darkdenim3.png");
+  
+
+  /*Braking button in next line for medium size screens*/
+  &__text {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 300;
+
+    @mixin atMedium {
+      /*Display text and button on the same line*/
+      display: inline;
+      margin-bottom: 0;
+      margin-right: 1.4rem;
+    }
+  }
+
+}

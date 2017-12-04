@@ -7,7 +7,7 @@ highlited properly when scrolling up and down.*/
   visibility: hidden;
 
   @mixin atLarge {
-    top: -105px;      
+    top: -140px;      
   }
 
   /*Move the about link further up to compensate for the gap left when the header is wider for small screens*/

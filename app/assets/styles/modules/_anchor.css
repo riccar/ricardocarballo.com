@@ -17,7 +17,10 @@ highlited properly when scrolling up and down.*/
     top: -105px;
     visibility: hidden;
 
-    
+    @mixin atLarge {
+      top: -140px;
+    }
+
   }
 }
 

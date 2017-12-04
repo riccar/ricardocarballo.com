@@ -57,6 +57,10 @@
 
   &--about {
     margin-top: 105px;
+    
+    @mixin atLarge {
+      margin-top: 140px;
+    }
     /*background-color: rgba($aboutBgColour, .4);*/
   }
 

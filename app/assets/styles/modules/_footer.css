@@ -10,16 +10,10 @@
 
   /*Braking button in next line for medium size screens*/
   &__text {
-    display: block;
-    margin-bottom: 1rem;
-    font-weight: 300;
+    
+    margin: 0 12px;
 
-    @mixin atMedium {
-      /*Display text and button on the same line*/
-      display: inline;
-      margin-bottom: 0;
-      margin-right: 1.4rem;
-    }
+   
   }
 
 }

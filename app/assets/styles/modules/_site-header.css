@@ -14,6 +14,7 @@
 
   @mixin atLarge {
      padding-bottom: 0.4rem;
+    
   }
   
 
@@ -35,6 +36,11 @@
     padding-left: 5px;
     padding-top: 5px;
     font-size: 1.2rem;
+
+    @mixin atLarge {
+      font-size: 2rem;
+      padding-left: 35px;
+    }
   }
 
   &__subtitle {
@@ -45,11 +51,16 @@
     margin: 0;
     padding-left: 5px;
     font-size: .7rem;
+
+    @mixin atLarge {
+      font-size: 1rem;
+      padding-left: 35px;
+    }
   }
 
   &__line-decorator {
     height: 3px;
-    width: 200px;
+    width: 80%;
     margin-left: 5px;
     margin-bottom: 2px;
     border-radius: 20px;
@@ -58,6 +69,11 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
     transform-origin: left;
+
+    @mixin atLarge {
+      height: 4px;
+      width: 80%;
+    }
   }
 }
 

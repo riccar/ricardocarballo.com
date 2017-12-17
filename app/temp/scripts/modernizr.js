@@ -1,88 +1,3 @@
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
-/******/ })
-/************************************************************************/
-/******/ ({
-
-/***/ 6:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-__webpack_require__(7);
-
-/***/ }),
-
-/***/ 7:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
 /*!
  * modernizr v3.5.0
  * Build https://modernizr.com/download?-setclasses-dontmin
@@ -107,8 +22,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
  * of control over the experience.
 */
 
-;(function (window, document, undefined) {
+;(function(window, document, undefined){
   var tests = [];
+  
 
   /**
    *
@@ -135,7 +51,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     _q: [],
 
     // Stub these for people who are listening
-    on: function on(test, cb) {
+    on: function(test, cb) {
       // I don't really think people should do this, but we can
       // safe guard it a bit.
       // -- NOTE:: this gets WAY overridden in src/addTest for actual async tests.
@@ -143,29 +59,34 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       // but the code to *disallow* sync tests in the real version of this
       // function is actually larger than this.
       var self = this;
-      setTimeout(function () {
+      setTimeout(function() {
         cb(self[test]);
       }, 0);
     },
 
-    addTest: function addTest(name, fn, options) {
-      tests.push({ name: name, fn: fn, options: options });
+    addTest: function(name, fn, options) {
+      tests.push({name: name, fn: fn, options: options});
     },
 
-    addAsyncTest: function addAsyncTest(fn) {
-      tests.push({ name: null, fn: fn });
+    addAsyncTest: function(fn) {
+      tests.push({name: null, fn: fn});
     }
   };
 
+  
+
   // Fake some of Object.create so we can force non test results to be non "own" properties.
-  var Modernizr = function Modernizr() {};
+  var Modernizr = function() {};
   Modernizr.prototype = ModernizrProto;
 
   // Leak modernizr globally when you `require` it rather than force it here.
   // Overwrite name so constructor name is nicer :D
   Modernizr = new Modernizr();
 
+  
+
   var classes = [];
+  
 
   /**
    * is returns a boolean if the typeof an obj is exactly type.
@@ -178,7 +99,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    */
 
   function is(obj, type) {
-    return (typeof obj === 'undefined' ? 'undefined' : _typeof(obj)) === type;
+    return typeof obj === type;
   }
   ;
 
@@ -222,6 +143,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         // Run the test, or use the raw value if it's not a function
         result = is(feature.fn, 'function') ? feature.fn() : feature.fn;
 
+
         // Set each of the names on the Modernizr object
         for (nameIdx = 0; nameIdx < featureNames.length; nameIdx++) {
           featureName = featureNames[nameIdx];
@@ -259,6 +181,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    */
 
   var docElement = document.documentElement;
+  
 
   /**
    * A convenience helper to check if the document we are running in is an SVG document
@@ -268,6 +191,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    */
 
   var isSVG = docElement.nodeName.toLowerCase() === 'svg';
+  
 
   /**
    * setClasses takes an array of class names and adds them to the root element
@@ -303,6 +227,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         docElement.className = className;
       }
     }
+
   }
 
   ;
@@ -324,9 +249,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   // Leak Modernizr namespace
   window.Modernizr = Modernizr;
 
-  ;
+
+;
+
 })(window, document);
-
-/***/ })
-
-/******/ });

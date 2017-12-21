@@ -1,12 +1,23 @@
 .project {
 
   position: relative;
+  
 
   @mixin atMedium {
+    padding-top: 50px;
     padding-left: 230px;
   }
 
- 
+  &__image {
+    padding: 10px 0;
+    height: 230px;
+    
+
+    @mixin atMedium {
+      height: 0;
+    }
+  }
+
 
   &__image-site {
     position: relative;
@@ -37,10 +48,12 @@
       position: absolute;
       margin: 0;
       left: 118px;
-      top: 28px;
+      top: 90px;
 
     }
   }
+
+   
 
 }
 

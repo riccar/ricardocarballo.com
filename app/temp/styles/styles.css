@@ -921,14 +921,31 @@ highlited properly when scrolling up and down.*/
 
   position: relative;
 
+   
+
 }
 
 @media (min-width: 800px) {
 
 .project {
+    padding-top: 50px;
     padding-left: 230px
 
+   
+
 }
+  }
+
+.project__image {
+    padding: 10px 0;
+    height: 230px;
+  }
+
+@media (min-width: 800px) {
+
+.project__image {
+      height: 0
+  }
   }
 
 .project__image-site {
@@ -970,7 +987,7 @@ highlited properly when scrolling up and down.*/
       position: absolute;
       margin: 0;
       left: 118px;
-      top: 28px
+      top: 90px
   }
   }
 

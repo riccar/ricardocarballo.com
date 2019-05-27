@@ -84,7 +84,7 @@ __webpack_require__(7);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /*!
- * modernizr v3.5.0
+ * modernizr v3.7.1
  * Build https://modernizr.com/download?-setclasses-dontmin
  *
  * Copyright (c)
@@ -95,6 +95,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
  *  Patrick Kettner
  *  Stu Cox
  *  Richard Herrera
+ *  Veeck
 
  * MIT License
  */
@@ -108,19 +109,18 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 */
 
 ;(function (window, document, undefined) {
+
   var tests = [];
 
   /**
-   *
    * ModernizrProto is the constructor for Modernizr
    *
    * @class
    * @access public
    */
-
   var ModernizrProto = {
     // The current version, dummy
-    _version: '3.5.0',
+    _version: '3.7.1',
 
     // Any settings that don't work as separate modules
     // can go in here as configuration.
@@ -174,20 +174,20 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    * @function is
    * @param {*} obj - A thing we want to check the type of
    * @param {string} type - A string to compare the typeof against
-   * @returns {boolean}
+   * @returns {boolean} true if the typeof the first parameter is exactly the specified type, false otherwise
    */
-
   function is(obj, type) {
     return (typeof obj === 'undefined' ? 'undefined' : _typeof(obj)) === type;
   }
+
   ;
 
   /**
    * Run through all tests and detect their support in the current UA.
    *
    * @access private
+   * @returns {void}
    */
-
   function testRunner() {
     var featureNames;
     var feature;
@@ -257,7 +257,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    * @access private
    * @returns {HTMLElement|SVGElement} The root element of the document
    */
-
   var docElement = document.documentElement;
 
   /**
@@ -266,7 +265,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    * @access private
    * @returns {boolean}
    */
-
   var isSVG = docElement.nodeName.toLowerCase() === 'svg';
 
   /**
@@ -276,7 +274,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
    * @function setClasses
    * @param {string[]} classes - Array of class names
    */
-
   // Pass in an and array of class names, e.g.:
   //  ['no-webp', 'borderradius', ...]
   function setClasses(classes) {
@@ -296,7 +293,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
     if (Modernizr._config.enableClasses) {
       // Add the new classes
-      className += ' ' + classPrefix + classes.join(' ' + classPrefix);
+      if (classes.length > 0) {
+        className += ' ' + classPrefix + classes.join(' ' + classPrefix);
+      }
       if (isSVG) {
         docElement.className.baseVal = className;
       } else {

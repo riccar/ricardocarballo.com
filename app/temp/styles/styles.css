@@ -765,8 +765,7 @@ set to be float so the container knows what's its current height*/
   padding: 60px 20px;
   margin: 40px 15px;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 10px 6px -6px #7f4e26;
-          box-shadow: 0px 10px 6px -6px #7f4e26;
+  /*box-shadow: 0px 10px 6px -6px $shadowColour;*/
   height: auto;
   border: 1px dotted;
   letter-spacing: 0.07rem;

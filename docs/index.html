@@ -13,14 +13,20 @@
   <!-- don't use /assets/.. if the site won't be hosted at the root of the domain like with github pages -->
   <link rel="stylesheet" href="assets/styles/styles-221a24ab36.css"/>
   
-  <script src="assets/scripts/Vendor-242719e2c5.js"></script>
+  <script src="assets/scripts/Vendor-db64bea700.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+
+
+
 </head>
 <body>
   <header class="site-header">
     
     <h1 class="site-header__title">Ricardo Carballo</h1>
     <div class="site-header__line-decorator"></div>
-    <h2 class="site-header__subtitle">Applications Developer</h5>
+    <h2 class="site-header__subtitle">Web Developer</h5>
     
     <!-- top-nav -->
     <nav class="main-nav">
@@ -50,7 +56,7 @@
   <div class="section section--about" >
     <div class="section__title">about<br> me</div>
     <p>Hi there...</p>
-    <p>I am a Full-stack bachelor degree web developer with a strong focus on front-end with ReactJS and Angular v6. 
+    <p>I am a full-stack web developer with a strong focus on front-end with ReactJS and Angular v6. 
       During my 16 years of professional career as a senior application developer, I have 
       implemented a number of websites over CMS and stand-alone, as well 
       as web apps in PHP. I am now concentrating my work on the MERN stack; MongoDB, Express, ReactJS and NodeJS 
@@ -79,6 +85,7 @@
       <li>Solid Git version control and branch management experience, focused on reducing potential conflicts</li>
       <li>Experience with PHP and ASP.Net Framework</li>
       <li>Proficiency in designing and implementing database structures in MySQL, SQL Server and MongoDB via Moongose</li>
+      <li>Bachelor degree in Computer Science</li>
     </ul>
   </div>
 
@@ -99,25 +106,27 @@
   <span class="anchor" id="projects" data-matching-link="#projects-link"></span>
   <div class="section section--projects" >
     <div class="section__title">recent<br>projects</div>
-    <div class="project">
-      <div class="project__image">
-        <img class="project__image-site" src="assets/images/clear-view-small.png" alt="Clear View Website">
-        <img class="project__image-mobile" src="assets/images/clear-view-mobile-small.png" alt="Clear View Website">
+    <div class="viewer">
+      <div class="project">
+        <div class="project__image">
+          <img class="project__image-site" src="assets/images/clear-view-small.png" alt="Clear View Website">
+          <img class="project__image-mobile" src="assets/images/clear-view-mobile-small.png" alt="Clear View Website">
+        </div>
+        <h3><a target="_blank" href="https://riccar.github.io/demo-site">Travel Agency Demo Site</a></h3> 
+        <p>
+          This website objective is to showcase  development and build automation, code organization and styling best practices using the B.E.M. approach. It was built using a number of Node.js npm modules like Gulp, PostCSS and WebPack among many others</p>
+        <p>Check out its <a target="_blank" href="https://github.com/riccar/demo-site">Github  Repo</a> and its Readme file for more details</p> 
       </div>
-      <h3><a target="_blank" href="https://riccar.github.io/demo-site">Travel Agency Demo Site</a></h3> 
-      <p>
-        This website objective is to showcase  development and build automation, code organization and styling best practices using the B.E.M. approach. It was built using a number of Node.js npm modules like Gulp, PostCSS and WebPack among many others</p>
-      <p>Check out its <a target="_blank" href="https://github.com/riccar/demo-site">Github  Repo</a> and its Readme file for more details</p> 
-    </div>
-    <div class="project">
-      <div class="project__image">
-        <img class="project__image-site" src="assets/images/youtube-viewer-small.png" alt="You Tube Viewer">
-        <img class="project__image-mobile" src="assets/images/youtube-viewer-mobile-small.png" alt="You Tube Viewer">
+      <div class="project">
+        <div class="project__image">
+          <img class="project__image-site" src="assets/images/youtube-viewer-small.png" alt="You Tube Viewer">
+          <img class="project__image-mobile" src="assets/images/youtube-viewer-mobile-small.png" alt="You Tube Viewer">
+        </div>
+        <h3><a target="_blank" href="https://riccar.github.io/youtube-viewer/">Retro YouTube viewer with React</a></h3> 
+        <p>
+          This is a Basic React "funny retro styled" single page application that uses YouTube API to search for and display a list of the first 5 videos returned, according to the search term.</p>
+          <p>Check out its <a target="_blank" href="https://github.com/riccar/youtube-viewer">Github  Repo</a> and its Readme file for more details</p>
       </div>
-      <h3><a target="_blank" href="https://riccar.github.io/youtube-viewer/">You Tube viewer with React</a></h3> 
-      <p>
-        This is a Basic React single page application that uses YouTube API to search for and display a list of the first 5 videos returned, according to the search term.</p>
-        <p>Check out its <a target="_blank" href="https://github.com/riccar/youtube-viewer">Github  Repo</a> and its Readme file for more details</p>
     </div>
   </div>
   <footer class="site-footer">
@@ -129,8 +138,10 @@
       <a href="https://www.linkedin.com/in/ricardo-carballo-amat-98853197"><img src="assets/images/social-1_round-linkedin.svg"></a>
       
     </div>
-      <p><span class="site-footer__text">&copy; 2018 Ricardo Carballo. </span></p>
+      <p><span class="site-footer__text">&copy; 2019 Ricardo Carballo. </span></p>
   </footer>
-  <script src="assets/scripts/App-090f15230b.js"></script>
+  <script src="assets/scripts/App-5e0a272d65.js"></script>
+  
+
 </body>
 </html>

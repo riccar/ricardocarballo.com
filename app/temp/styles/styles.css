@@ -925,14 +925,50 @@ highlited properly when scrolling up and down.*/
 }
 
 @media (min-width: 800px) {
+    .project p {
+      margin-top: 50px;
+    }
+  }
 
-.project {
-    padding-top: 50px;
-    padding-left: 230px
+.project__screen {
 
-   
+    display: -webkit-box;
 
-}
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: top;
+        -ms-flex-align: top;
+            align-items: top;
+    
+  }
+
+.project__screen p {
+      margin-top: 0;
+    }
+
+@media (min-width: 800px) {
+
+.project__screen {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      height: 180px
+    
+  }
+
+      .project__screen p {
+        width:70%;
+        margin-top: 50px;
+        line-height: 1.4em;
+      }
   }
 
 .project__image {
@@ -952,8 +988,8 @@ highlited properly when scrolling up and down.*/
     width: 15em;
     display: block;
     margin: 25px auto -65px auto;
-    -webkit-transform: perspective( 650px ) rotateY(45deg);
-            transform: perspective( 650px ) rotateY(45deg);
+    -webkit-transform: perspective( 630px ) rotateY(45deg);
+            transform: perspective( 630px ) rotateY(45deg);
     -webkit-box-shadow: 0 0 20px rgba(127,78,38, .8);
             box-shadow: 0 0 20px rgba(127,78,38, .8);
   }
@@ -961,9 +997,9 @@ highlited properly when scrolling up and down.*/
 @media (min-width: 800px) {
 
 .project__image-site {
-      position: absolute;
-      left: 0;
-      margin: 5px auto 5px auto
+      /*position: absolute;*/
+      /*left: 0;
+      margin: 5px auto 5px auto;*/
   }
   }
 

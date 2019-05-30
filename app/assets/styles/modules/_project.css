@@ -2,10 +2,35 @@
 
   position: relative;
   
+  
 
   @mixin atMedium {
-    padding-top: 50px;
-    padding-left: 230px;
+    p {
+      margin-top: 50px;
+    }
+  }
+
+  &__screen {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: top;
+    p {
+      margin-top: 0;
+    }
+
+    @mixin atMedium {
+      flex-direction: row;
+      height: 180px;
+
+      p {
+        width:70%;
+        margin-top: 50px;
+        line-height: 1.4em;
+      }
+    }
+    
   }
 
   &__image {
@@ -24,13 +49,13 @@
     width: 15em;
     display: block;
     margin: 25px auto -65px auto;
-    transform: perspective( 650px ) rotateY(45deg);
+    transform: perspective( 630px ) rotateY(45deg);
     box-shadow:0 0 20px rgba($shadowColour, .8);
-
+    
     @mixin atMedium {
-      position: absolute;
-      left: 0;
-      margin: 5px auto 5px auto;
+      /*position: absolute;*/
+      /*left: 0;
+      margin: 5px auto 5px auto;*/
     }
   }
 

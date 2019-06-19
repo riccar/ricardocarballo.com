@@ -12,7 +12,7 @@ Simple website to showcase development environment automation with Gulp and HTML
 - jquery for DOM manipulation 
 
 #Usage
-- Install gulp: npm install --save-dev
+- Install gulp: npm install gulp --save-dev
 - To serve the website run: gulp watch
-- Build for production deployment:  gulp build
+- Build (before commit) for production deployment:  gulp build
 - Stage changes, commit and deploy to GitHub

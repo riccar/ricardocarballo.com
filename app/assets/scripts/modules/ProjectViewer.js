@@ -8,7 +8,7 @@ import slick from 'slick-carousel';
       speed: 500,
       fade: true,
       cssEase: 'linear',
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 5000,
     });
   });

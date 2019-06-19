@@ -919,7 +919,6 @@ highlited properly when scrolling up and down.*/
 .project {
 
   position: relative;
-
    
 
 }
@@ -959,14 +958,14 @@ highlited properly when scrolling up and down.*/
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
-              flex-direction: row;
-      height: 180px
+              flex-direction: row
     
   }
+     
 
       .project__screen p {
         width:70%;
-        margin-top: 50px;
+        margin-top: 80px;
         line-height: 1.4em;
       }
   }
@@ -1025,6 +1024,10 @@ highlited properly when scrolling up and down.*/
       top: 90px
   }
   }
+
+.project__screen__desc ul{
+      margin-left: -10px;
+    }
 
 .site-footer{
   margin: 0;

@@ -12077,7 +12077,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     speed: 500,
     fade: true,
     cssEase: 'linear',
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000
   });
 });

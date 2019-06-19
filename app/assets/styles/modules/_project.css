@@ -22,11 +22,11 @@
 
     @mixin atMedium {
       flex-direction: row;
-      height: 180px;
+     
 
       p {
         width:70%;
-        margin-top: 50px;
+        margin-top: 80px;
         line-height: 1.4em;
       }
     }
@@ -78,6 +78,11 @@
     }
   }
 
+  &__screen__desc {
+    ul{
+      margin-left: -10px;
+    }
+  }
    
 
 }
